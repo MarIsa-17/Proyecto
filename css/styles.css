@@ -121,3 +121,6 @@ footer{
   filter:drop-shadow(2px 2px 4px #604e68);
   height: 50px;
 }
+.whatsapp:hover{
+  transform: scale(1.1);
+}
