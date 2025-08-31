@@ -1,6 +1,12 @@
 @import url(css/styles.css);
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
+:root{
+    --color-fondo:#f1f1f1;
+    --color-cabecera:#f0e8fd;
+    --fuente-principal:"Montserrat", sans-serif;
+    --color-subtitulos:#f7ab59;
+    --color-fondo-etiquetas:#f7ab59d6;
+}
 body{
   background-color: white;
 }
@@ -18,7 +24,7 @@ body{
   font-weight:300;
   font-size: 14px;
   text-align: center;
-  color: var(--color-fuente-titulos);
+  color: #633576;
   padding: 10px;
   width: 45%;
   position: absolute;
@@ -49,8 +55,6 @@ body{
   display: grid;
   gap:10px;
   grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
-  grid-template-areas:
-   'agenda calendario libreta bloc kit';
   border-radius: 10px;
   box-shadow: 2px 2px 8px #d8d8d8;
 }
@@ -105,7 +109,9 @@ body{
   box-shadow: 2px 2px 8px #d8d8d8;
 }
 .productoDes img{
-  height: 170px;
+  height: auto;
+  max-width: 170px;
+  width: auto;
   border-bottom-left-radius: 10px; 
   border-top-left-radius: 10px;
 }
@@ -188,5 +194,17 @@ body{
   }
   100%{
     transform: scale(1);
+  }
+}
+@media (max-width: 768px) {
+  .testimonios {
+    flex-direction: column;
+  }
+  .productoDes {
+    flex-direction: column;
+    width: 100%;
+  }
+  .tarjetas {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }
 }
