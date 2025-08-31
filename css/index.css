@@ -52,7 +52,7 @@ body{
   grid-template-areas:
    'agenda calendario libreta bloc kit';
   border-radius: 10px;
-  background-color: var(--color-fondo);
+  box-shadow: 2px 2px 8px #d8d8d8;
 }
 .tarjetas div img{
   width: 100%;
@@ -71,10 +71,122 @@ body{
 .tar:hover p {
   background-color: var(--color-fondo-etiquetas);
   color: #28202c;
-  font-family: "Montserrat", sans-serif;;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   width: 100%;
   text-align: center;
   padding: 10px;
 }
+#destacados{
+  margin: 20px 5px;
+  text-align: center;
+  background-color: var(--color-fondo);
+  padding: 1rem;
+  align-content: center;
+}
+#destacados h2{
+  font-size: 1.1rem;
+  color:#de9a50;
+  font-family: "Lora", serif;
+}
+.grid{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.productoDes{
+  background-color:white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 60%;
+  box-shadow: 2px 2px 8px #d8d8d8;
+}
+.productoDes img{
+  height: 170px;
+  border-bottom-left-radius: 10px; 
+  border-top-left-radius: 10px;
+}
+.productoDes h3{
+  color:rgb(20, 19, 19);
 
+}
+.descrip{
+  padding: 0 20px;
+  font-family: "Montserrat", sans-serif;
+  align-content: center;
+}
+.descrip p{
+  font-size: 12px;
+}
+.descrip h3{
+  font-size: 16px;
+  color: #633576;
+}
+.click{
+    border:none;
+    background-color:var( --color-cabecera);
+    margin: 0 8px;
+    padding: 7px;
+    border-radius: 10px;
+    color: #5b5b5b;
+    box-shadow: 2px 2px 4px #887092;
+}
+.click:hover{    
+  transform: scale(1.2);
+  color: #663f79;
+  font-weight: 700;
+  }
+  #opiniones{
+  margin: 20px 5px;
+  text-align: center;
+  background-color: var(--color-fondo);
+  padding: 1rem;
+  align-content: center;
+  flex-wrap: wrap;
+}
+#opiniones h2{
+  font-size: 1.1rem;
+  color:#de9a50;
+  font-family: "Lora", serif;
+}
+.testimonios{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.test{
+  background-color:#d8b3e7;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+  border-radius: 10px;
+  height: 250px;
+  box-shadow: 2px 2px 4px #887092;
+}
+.test img{
+  animation: opinion 3s infinite;
+  height: 30px;
+}
+.test h3{
+  font-size: 15px;
+}
+.test p{
+  font-size: 12px;
+  background-color: var(--color-cabecera);
+  border-radius: 10px;
+  padding: 5px;
+}
+@keyframes opinion {
+  0%{
+    transform: scale(0.9);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
