@@ -1,4 +1,4 @@
-@import url(css/styles.css);
+@import url(styles.css);
 
 body{
   background-color: white;
@@ -12,6 +12,7 @@ body{
   border-radius: 10px;
   background-color: var(--color-fondo);
   padding: 20px;
+  margin: 20px;
 }
 .catalogo div img{
     border-radius: 8px;
