@@ -89,43 +89,44 @@ body{
   align-content: center;
 }
 #destacados h2{
-  font-size: 1.1rem;
-  color:#de9a50;
+  font-size: 1.3rem;
+  color: #de9a50;
   font-family: "Lora", serif;
+  margin-bottom: 1rem;
 }
 .grid{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
+  justify-items: center;
 }
 .productoDes{
-  background-color:white;
+  background-color: white;
   border-radius: 15px;
   display: flex;
-  flex-direction: row;
-  gap: 20px;
-  width: 60%;
+  flex-direction: column;
+  max-width: 300px;
   box-shadow: 2px 2px 8px #d8d8d8;
+  overflow: hidden;
+  transition: transform 0.3s;
 }
 .productoDes img{
+  width: 100%;
   height: auto;
-  max-width: 170px;
-  width: auto;
-  border-bottom-left-radius: 10px; 
-  border-top-left-radius: 10px;
+  display: block;
 }
 .productoDes h3{
   color:rgb(20, 19, 19);
 
 }
 .descrip{
-  padding: 0 20px;
+  padding: 1rem;
   font-family: "Montserrat", sans-serif;
   align-content: center;
 }
 .descrip p{
-  font-size: 12px;
+  font-size: 14px;
+  margin: 0.3rem 0;
 }
 .descrip h3{
   font-size: 16px;
